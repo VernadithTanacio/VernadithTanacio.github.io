@@ -2,7 +2,7 @@ const GITHUB_USER = "VernadithTanacio";
 async function loadProjects() {
   const box = document.getElementById("project-list");
   try {
-    const res = await fetch("data/projects.json");
+    const res = await fetch("projects.json");
     if (!res.ok) throw new Error("HTTP " + res.status);
     const projects = await res.json();
     box.innerHTML = "";
