@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal portfolio of Vernadith T. Tanacio, an IT student.">
+    <title>Vernadith T. Tanacio | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="navbar">
+      <a class="logo" href="#home">Vernadith Tanacio</a>
+      <nav aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <div class="hero-text">
+          <h1>Vernadith T. Tanacio</h1>
+          <p class="tagline">IT student who builds simple, useful websites.</p>
+          <p>I enjoy turning ideas into working websites and learning something new with every project.</p>
+          <div class="cta">
+            <a class="btn" href="#projects">View my projects</a>
+            <a class="btn btn-outline" href="#contact">Contact me</a>
+          </div>
+        </div>
+        <img class="photo" src="images/profile.jpg" alt="Photo of Vernadith T. Tanacio">
+      </section>
+
+      <section id="about">
+        <h2>About</h2>
+        <p>
+          Hello! I'm Vernadith Tanacio, a second-year BS Information Technology student at
+          Nueva Vizcaya State University. I enjoy building small projects to practice what I
+          learn, creating useful and user-friendly websites, and exploring systems.
+        </p>
+        <div class="grid-2">
+          <article class="card">
+            <h3>Education</h3>
+            <p>Nueva Vizcaya State University<br>BS Information Technology</p>
+          </article>
+          <article class="card">
+            <h3>Career goals</h3>
+            <p>
+              I want to become an IT professional, build software that helps people in their
+              daily lives, and create security systems that protect them from hacking and phishing.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Interests</h3>
+            <p>Debugging, JavaScript, web design, volleyball, and photography.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills">
+        <h2>Skills</h2>
+        <div class="grid-2">
+          <article class="card">
+            <h3>Programming languages</h3>
+            <ul>
+              <li>HTML &amp; CSS</li>
+              <li>JavaScript</li>
+              <li>Python</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Tools and technologies</h3>
+            <ul>
+              <li>Git &amp; GitHub</li>
+              <li>VS Code</li>
+              <li>REST APIs &amp; JSON</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Soft skills</h3>
+            <ul>
+              <li>Teamwork</li>
+              <li>Communication</li>
+              <li>Time management</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects">
+        <h2>Projects</h2>
+        <div id="project-list" class="grid-3" aria-live="polite">
+          <p>Loading projects...</p>
+        </div>
+        <h3 class="repo-title">Latest GitHub repositories</h3>
+        <ul id="repo-list" class="repo-list" aria-live="polite">
+          <li>Loading repositories...</li>
+        </ul>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <div class="contact-wrap">
+          <ul class="contact-links">
+            <li>Email: <a href="mailto:vernadithtanacio093@gmail.com">vernadithtanacio093@gmail.com</a></li>
+            <li>
+              GitHub:
+              <a href="https://github.com/VernadithTanacio" target="_blank" rel="noopener">github.com/VernadithTanacio</a>
+            </li>
+            <li>
+              LinkedIn:
+              <a href="https://www.linkedin.com/in/VernadithTanacio" target="_blank" rel="noopener">linkedin.com/in/VernadithTanacio</a>
+            </li>
+          </ul>
+          <form id="contact-form" novalidate>
+            <label for="name">Name</label>
+            <input id="name" type="text" autocomplete="name" spellcheck="false" autocapitalize="words" autocorrect="off">
+            <span class="error" id="name-error"></span>
+
+            <label for="email">Email</label>
+            <input id="email" type="email" autocomplete="email" spellcheck="false" autocapitalize="off" autocorrect="off">
+            <span class="error" id="email-error"></span>
+
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" spellcheck="false" autocapitalize="sentences" autocorrect="off"></textarea>
+            <span class="error" id="message-error"></span>
+
+            <button class="btn" type="submit">Send message</button>
+            <p id="form-status" role="status"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; Vernadith T. Tanacio</p>
+    </footer>
+    <button id="to-top" aria-label="Back to top" title="Back to top">↑</button>
+    <script src="js/script.js"></script>
+  </body>
+</html>

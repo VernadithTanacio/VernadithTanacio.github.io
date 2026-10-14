@@ -1,0 +1,10 @@
+[
+  {
+    "title": "Personal Portfolio Website",
+    "description": "This website, build with HTML, CSS, and JavaScript, with data loaded from JSON and the GitHub APIs.",
+    "technologies": ["HTML", "CSS", "JavaScript"],
+    "role": "Solo developer: design, coding and testing",
+    "screenshot": "Portfolio.png",
+    "link": "https://github.com/VernadithTanacio/VernadithTanacio.github.io"
+  }
+]
