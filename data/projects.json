@@ -6,5 +6,13 @@
     "role": "Solo developer: design, coding and testing",
     "screenshot": "Portfolio.png",
     "link": "https://github.com/VernadithTanacio/VernadithTanacio.github.io"
-  }
+  },
+{
+    "title": "RJ45 Cable Connection",
+    "description": "This project is a simple RJ45 cable connection diagram that shows the pinout configuration for both T568A and T568B wiring standards.",
+    "technologies": ["RJ45 Connector", "Cat5e/Cat6 Cable", "Crimping Tool", "Lan Cable Tester"],
+    "role": "Solo technician: stripping, wiring, crimping and testing",
+    "screenshot": "RJ45.png",
+    "link": "https://github.com/VernadithTanacio/RJ45-Cable-Connection"
+  }    
 ]

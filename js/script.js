@@ -26,7 +26,7 @@ async function loadProjects() {
       const link = document.createElement("a");
       link.href = p.link;
       link.target = "_blank";
-      link.rel = "noopener";
+      link.rel = "no opener";
       link.textContent = "View on GitHub";
       card.append(img, title, desc, tech, role, link);
       box.appendChild(card);
@@ -66,7 +66,7 @@ async function loadRepos() {
       const a = document.createElement("a");
       a.href = r.html_url;
       a.target = "_blank";
-      a.rel = "noopener";
+      a.rel = "no opener";
       a.textContent = r.name;
 
       const lang = document.createElement("span");
