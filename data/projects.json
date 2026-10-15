@@ -1,18 +1,26 @@
 [
   {
     "title": "Personal Portfolio Website",
-    "description": "This website, build with HTML, CSS, and JavaScript, with data loaded from JSON and the GitHub APIs.",
-    "technologies": ["HTML", "CSS", "JavaScript"],
+    "description": "This website, built with HTML, CSS, and JavaScript and hosted on GitHub Pages.",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
     "role": "Solo developer: design, coding and testing",
-    "screenshot": "Portfolio.png",
+    "screenshot": "images/Portfolio.png",
     "link": "https://github.com/VernadithTanacio/VernadithTanacio.github.io"
   },
-{
+  {
     "title": "RJ45 Cable Connection",
-    "description": "This project is a simple RJ45 cable connection diagram that shows the pinout configuration for both T568A and T568B wiring standards.",
-    "technologies": ["RJ45 Connector", "Cat5e/Cat6 Cable", "Crimping Tool", "Lan Cable Tester"],
+    "description": "A simple RJ45 cable connection project: preparing a network cable and attaching the connector.",
+    "technologies": [
+      "RJ45 Connector",
+      "Cat5e/Cat6 Cable",
+      "Crimping Tool"
+    ],
     "role": "Solo technician: stripping, wiring, crimping and testing",
-    "screenshot": "RJ45.png",
+    "screenshot": "images/RJ45.png",
     "link": "https://github.com/VernadithTanacio/RJ45-Cable-Connection"
-  }    
+  }
 ]
