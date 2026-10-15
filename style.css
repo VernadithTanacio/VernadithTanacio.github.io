@@ -1,10 +1,10 @@
 :root {
   --primary: #030304;   
   --accent: #1f3668);    
-  --bg: #cc48c8;       
+  --bg: #dcebfa;       
   --text: #1a1d24;
   --space: 4rem;
-  --font-head: "Space Grotesk", Arial, sans-serif;
+  --font-head: "poppins", Arial, sans-serif;
   --font-body: "Source Sans 3", Arial, sans-serif;
   --highlight: #7ee8d8;
 }
