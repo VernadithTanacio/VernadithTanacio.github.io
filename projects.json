@@ -2,6 +2,7 @@
   {
     "title": "Personal Portfolio Website",
     "description": "This website, built with HTML, CSS, and JavaScript and hosted on GitHub Pages.",
+    "images": "img/Project1.png",
     "technologies": [
       "HTML",
       "CSS",
@@ -13,6 +14,7 @@
   {
     "title": "RJ45 Cable Connection",
     "description": "A simple RJ45 cable connection project: preparing a network cable and attaching the connector.",
+    "images": "img/RJ45.png",
     "technologies": [
       "RJ45 Connector",
       "Cat5e/Cat6 Cable",
