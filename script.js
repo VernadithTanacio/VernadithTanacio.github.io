@@ -15,16 +15,16 @@ fetch("data/projects.json")
     grid.replaceChildren();
     list.forEach(p => {
       const card = el("article", "card");
-      if (p.screenshot) {
+      if (p.images) {
         const img = el("img", "shot");
-        img.alt = p.title + " screenshot";
+        img.alt = p.title + " images";
         img.loading = "lazy";
         let retried = false;
         img.onerror = () => {
-          if (!retried) { retried = true; img.src = "images/" + p.screenshot; }
+          if (!retried) { retried = true; img.src = "images/" + p.images; }
           else img.remove();
         };
-        img.src = p.screenshot;
+        img.src = p.images;
         card.append(img);
       }
       card.append(el("h3", "", p.title), el("p", "", p.description));
