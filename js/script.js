@@ -11,14 +11,13 @@ fetch("data/projects.json")
   .then(list => {
     grid.replaceChildren();
     list.forEach(p => {
-      
-        let retried = false;
-        img.onerror = () => {
-          if (!retried) { retried = true; img.src = "images/" + p.screenshot; }
-          else img.remove();
-        };
-        img.src = p.screenshot;
-        card.append(img);
+      const card = el("article", "card");
+      if (p.images) {
+       const img = el("img", "shot");
+       img.alt = p.title + " images";
+       img.loading = "lazy";
+       img.src = p.images;
+       card.append(img);
       }
       card.append(el("h3", "", p.title), el("p", "", p.description));
       if (p.role) {
