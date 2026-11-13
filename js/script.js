@@ -11,11 +11,7 @@ fetch("data/projects.json")
   .then(list => {
     grid.replaceChildren();
     list.forEach(p => {
-      const card = el("article", "card");
-      if (p.screenshot) {
-        const img = el("img", "shot");
-        img.alt = p.title + " screenshot";
-        img.loading = "lazy";
+      
         let retried = false;
         img.onerror = () => {
           if (!retried) { retried = true; img.src = "images/" + p.screenshot; }
