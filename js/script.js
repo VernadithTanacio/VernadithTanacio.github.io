@@ -15,7 +15,7 @@ fetch("data/projects.json")
             const card = el("article", "card");
             if (p.image) {
                 const img = el("img", "shot");
-                img.src = p.images;
+                img.src = p.image;
                 img.alt = p.title;
                 card.append(img);
             }
