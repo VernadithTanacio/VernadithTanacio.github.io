@@ -13,7 +13,7 @@ fetch("data/projects.json")
         grid.replaceChildren();
         list.forEach(p => {
             const card = el("article", "card");
-            if (p.images) {
+            if (p.image) {
                 const img = el("img", "shot");
                 img.src = p.images;
                 img.alt = p.title;
