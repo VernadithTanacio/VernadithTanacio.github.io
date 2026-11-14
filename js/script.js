@@ -42,3 +42,27 @@ fetch("data/projects.json")
             grid.append(card);
         });
     });
+const repoList = document.getElementById("repo-list");
+fetch(`https://api.github.com/users/${USER}/repos?sort=updated&per_page=6`)
+  .then(r => {
+    if (!r.ok) throw new Error("GitHub API error " + r.status);
+    return r.json();
+  })
+  .then(repos => {
+    repoList.replaceChildren();
+    repos.forEach(repo => {
+      const item = el("article", "card");
+      item.append(el("h3", "", repo.name));
+      item.append(el("p", "", repo.description || "No description"));
+      const a = el("a", "", "View repository");
+      a.href = repo.html_url;
+      a.target = "_blank";
+      a.rel = "noopener";
+      item.append(a);
+      repoList.append(item);
+    });
+  })
+  .catch(err => {
+    repoList.textContent = "Unable to load repositories right now.";
+    console.error(err);
+  });
