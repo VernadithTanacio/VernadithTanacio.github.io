@@ -22,5 +22,18 @@
     ],
     "role": "Solo technician: stripping, wiring, crimping and testing",
     "link": "https://github.com/VernadithTanacio/RJ45-Cable-Connection"
+  },
+{
+    "title": "Packing App",
+    "description": "A packing checklist that helps users list, organize and check off items before a trip.",
+    "image": "images/packing.png",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "role": "Solo developer: design, coding and testing",
+    "link": "https://github.com/VernadithTanacio/packing-app"
   }
 ]
+
