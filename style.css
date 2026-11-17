@@ -1,12 +1,12 @@
 :root{
   --primary:#3a3f4b;
-  --accent:#c9457f;      /* pink (buttons, links) */
-  --bg:#e3f2fc;         /* light blue */
+  --accent:#c9457f;      
+  --bg:#e3f2fc;         
   --text:#33384a;
   --space:4rem;
   --font-head:"Poppins", Arial, sans-serif;
   --font-body:"Source Sans 3", Arial, sans-serif;
-  --highlight:#f9d3e3;  /* soft pink */
+  --highlight:#f9d3e3;  
   --blue:#bfe0f7;
   --white:rgba(255,255,255,.88);
 }
