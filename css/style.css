@@ -74,8 +74,6 @@ footer{text-align:center;padding:1.5rem;font-size:.9rem;background:var(--highlig
   nav a{margin:0 .8rem 0 0}
   .avatar{width:180px;height:180px}
 }
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-}
 @media (prefers-reduced-motion: reduce) {
   html {scroll-behavior: auto; }
 }
