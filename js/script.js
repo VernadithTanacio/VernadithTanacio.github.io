@@ -7,7 +7,6 @@ function el(tag, cls, text) {
   return e;
 }
 
-// ---------- Projects from projects.json ----------
 const grid = document.getElementById("project-grid");
 
 fetch("projects.json")
@@ -56,7 +55,6 @@ fetch("projects.json")
     console.error(err);
   });
 
-// ---------- Latest GitHub repositories ----------
 const repoList = document.getElementById("repo-list");
 
 fetch(`https://api.github.com/users/${USER}/repos?sort=updated&per_page=6`)
